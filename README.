@@ -1,0 +1,28 @@
+The given code is a simple cinema management program that allows users to view seats in a cinema hall, purchase tickets, and view statistics. The cinema hall is represented as a 2D array of seats, where each seat can be in two states: "S" for available and "B" for booked. The program takes user input for the number of rows and seats in each row in the cinema hall and provides a menu-based interface for users to interact with the cinema hall.
+
+The program defines three classes:
+
+Seat: Represents a seat in the cinema hall, with its row and column numbers.
+AlreadyTakenSeatException: Represents a custom exception that is thrown when a user tries to book an already booked seat.
+NonExistingSeatException: Represents a custom exception that is thrown when a user selects a non-existing seat.
+The Cinema class represents the cinema hall and contains methods to handle operations such as creating empty seats, displaying the seats, calculating ticket prices, booking seats, and displaying statistics. The Cinema class also contains a main method which acts as the entry point for the program and provides a menu-based interface for users to interact with the cinema hall.
+
+Some of the key methods in the Cinema class are:
+
+createEmptySeats: Initializes the cinema hall with empty seats.
+getTopRow: Generates and returns a string representation of the top row of seat numbers.
+isFrontHalf: Determines if a given seat is in the front half of the cinema hall.
+getPrice: Calculates and returns the ticket price for a given seat.
+takeSeat: Marks a seat as booked.
+selectSeat: Takes user input for selecting a seat.
+buySeat: Handles the process of buying a ticket, including seat selection, marking the seat as booked, and updating statistics.
+printSeats: Displays the current state of the cinema hall, including the seat layout.
+getTotalIncome: Calculates and returns the total income that can be generated from selling all the tickets in the cinema hall.
+getPercentage: Calculates and returns the percentage of tickets sold in the cinema hall.
+printStatistics: Displays the current statistics of the cinema hall, including the number of purchased tickets, percentage of tickets sold, current income, and total income.
+showMenu: Displays a menu-based interface for users to interact with the cinema hall and handles user input to invoke the appropriate methods.
+The program uses exception handling to handle cases where users try to book already booked seats or select non-existing seats. It also includes basic input validation to ensure that user input for row and seat numbers is within the valid range. However, there is room for improvement in terms of error handling and input validation to make the program more robust.
+
+
+
+
